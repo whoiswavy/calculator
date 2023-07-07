@@ -4,32 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" href="https://fav.farm/🧮" />
+    <script
+      src="https://kit.fontawesome.com/d1c9d96fea.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Calculator</title>
   </head>
   <body>
-    <div class="button-container">
-      <div class="numbers">
-        <button id="numbers">7</button>
-        <button id="numbers">8</button>
-        <button id="numbers">9</button>
-        <button id="operators">÷</button>
+    <div class="main">
+      <div class="all-container">
+        <div id="display">0</div>
 
-        <button id="numbers">4</button>
-        <button id="numbers">5</button>
-        <button id="numbers">6</button>
-        <button id="operators">×</button>
+        <div class="button-container">
+          <div class="numbers">
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator">÷</button>
 
-        <button id="numbers">1</button>
-        <button id="numbers">2</button>
-        <button id="numbers">3</button>
-        <button id="operators">-</button>
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operator">×</button>
 
-        <button id="numbers">0</button>
-        <button id="numbers">.</button>
-        <button id="equal">=</button>
-        <button id="operators">+</button>
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="operator">-</button>
+
+            <button class="number">0</button>
+            <button onclick="clearDisplay()">C</button>
+            <button class="equal">=</button>
+            <button class="operator">+</button>
+          </div>
+        </div>
       </div>
     </div>
+
+    <footer class="footer">
+      <p>
+        Copyright ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        0xsam
+      </p>
+      <a href="https://github.com/whoiswavy" target="_blank">
+        <div class="container">
+          <i class="fa-brands fa-github fa-spin"></i>
+        </div>
+      </a>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

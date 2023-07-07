@@ -1,34 +1,99 @@
+:root {
+    --primary-dark: rgb(28, 26, 26);
+}
+
 body {
-    background-color: rgb(28, 26, 26);
+    background-color: var(--primary-dark);
+    font-family: Roboto, sans-serif;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    min-height: 500px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.all-container {
+    display: block;
+    max-width: 400px;
+}
+
+.button-container {
+    margin-top: 10px;
+}
+
+#display {
+    color: white;
+    background-color: black;
+    /* max-width: 300px; */
+    height: 34.5px;
+    padding: 15px 30px;
+    border: 1px;
+    border-radius: 4px;
+    text-align: right;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 .numbers {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    max-width: 10px;
+    /* max-width: 10px; */
+    gap: 10px;
 }
 
 button {
     padding: 15px 30px;
-    /* border: 1px solid var(--primary-dark); */
+    /* border: 1px solid white; */
     /* border-radius: 5px; */
-    margin: 5px;
-    font-weight: bold;
-    border: 1px;
+    /* margin: 5px; */
+    font-size: 20px;
+    /* font-weight: bold; */
+    border: 2px;
     border-radius: 4px;
   }
 
-#equal {
-    background-color: #8ab4f8;
-}
-
-#numbers {
+.number {
     color: white;
     background-color: #3c4043;
 }
 
-#operators {
+.operator {
     color: white;
     background-color: #5f6368;
 }
+
+.equal {
+    background-color: #8ab4f8;
+}
+
+/* FOOTER */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+  }
+  
+  .fa-github {
+    color: white;
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+  }
